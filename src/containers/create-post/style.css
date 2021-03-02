@@ -5,3 +5,41 @@
     padding: 24px 24px;
     
 }
+
+.createpostImageupload > input{
+    display: none;
+}
+.createpostUpload{
+    border: none;
+    background-color: white;
+
+}
+
+.createpostLogin{
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    max-width: 600px;
+    padding: 12px 16px;
+}
+.createpostImageandButton{
+    display: flex;
+    justify-content: space-between;
+}
+.createpostTextarea{
+    border: none;
+    width: 100%;
+    font-family: 'Shippori Mincho', serif;
+    resize: none;
+    font-size: 14px;
+}
+
+.createpostTextarea:focus{
+    outline: none;
+}
+
+#image-preview{ 
+    max-height: 80px;
+    margin: 12px 0px;
+    border-radius: 4px;
+}
