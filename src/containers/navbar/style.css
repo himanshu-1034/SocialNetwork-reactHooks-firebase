@@ -10,3 +10,16 @@
     height: 35px;
     border-radius: 8px;
 }
+
+.signoutbtn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.signoutbtn:focus{
+    outline: none;
+}
+.signoutDiv{
+    display: flex;
+}
