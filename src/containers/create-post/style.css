@@ -12,7 +12,11 @@
 .createpostUpload{
     border: none;
     background-color: white;
-
+    cursor: pointer;
+}
+.createpostUpload:focus{
+    /* display: ; */
+    outline: none;
 }
 
 .createpostLogin{

@@ -20,10 +20,11 @@ export default function CreatePost() {
 
             var imagepreview = document.getElementById("image-preview");
             imagepreview.src = selectedImage;
-            imagepreview.style.display="block";
+            imagepreview.style.display="block !important";
         }
-
+        document.getElementById("image-preview").style.display="block";
     }
+
 
     const handleUpload=()=>{
         if(imageUrl){
@@ -47,9 +48,21 @@ export default function CreatePost() {
                         userphotoUrl:user.photoURL
                     });
                 });
+                setCaption("");
+                setProgress(0);
+                setimageUrl(null);
+                document.getElementById("image-preview").style.display="none";
             });
 
+
+
         }
+    }
+
+
+    const deletePreviewImage = ()=>{
+        document.getElementById("image-preview").style.display="none";
+        setimageUrl(null);
     }
 
     return (
